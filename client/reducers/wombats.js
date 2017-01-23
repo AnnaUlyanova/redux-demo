@@ -1,4 +1,4 @@
-const wombats = (state = [], action) => {
+const wombats = (state = [{id:1, name:"Robin"},{id:2, name:"Ted"}], action) => {
   switch (action.type) {
     case 'ADD_WOMBAT':
       return [...state, action.wombat]

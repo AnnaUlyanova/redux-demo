@@ -1,16 +1,16 @@
 module.exports = {
-  entry: './index.js',
+  entry: './client/index.js',
   output: {
     path: './',
     filename: 'bundle.js'
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'babel', exclude: /node_modules/ }
+      { test: /\.jsx?$/, loader: 'babel', exclude: /node_modules/ }
     ]
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js', '.jsx']
   },
   devtool: 'source-map'
 }
